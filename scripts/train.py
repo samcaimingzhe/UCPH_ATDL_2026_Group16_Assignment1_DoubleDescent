@@ -216,7 +216,7 @@ def main() -> None:
     args = parser.parse_args()
 
     if args.device.startswith("cuda") and not torch.cuda.is_available():
-        raise RuntimeError("CUDA is unavailable; Figure 1 training is intended for a CUDA machine")
+        raise RuntimeError("CUDA is unavailable")
     if not 0 <= args.shard < args.num_shards:
         raise ValueError("shard must satisfy 0 <= shard < num-shards")
     args.output.mkdir(parents=True, exist_ok=True)
