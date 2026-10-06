@@ -6,7 +6,7 @@ This folder contains only the code needed to reproduce Figure 1 of Nakkiran et a
 ## Folder layout
 
 ```text
-DD2/
+Here/
 ├── data/               # CIFAR-10 is downloaded here when training starts
 ├── model/
 │   └── resnet.py       # width-scaled pre-activation ResNet-18
